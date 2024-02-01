@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+constants() {
+    # os-specific consts
+    . ./$1
+
+    export SOA_BOOKS_DIR="/bigboi/Media/Books"
+    export SOA_SHOWS_DIR="/bigboi/Media/Shows"
+    export SOA_MOVIES_DIR="/bigboi/Media/Movies"
+    export SOA_MUSIC_DIR="/bigboi/Media/Music"
+
+}

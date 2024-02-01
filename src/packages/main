@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+
+installPackages() {
+    . ./$os
+    _installPackages
+}
