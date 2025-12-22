@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+	name = mrod502
+	email = mrod22502@gmail.com
+	signingkey = 19C8C3E6383DD9F3 
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
+
+[commit]
+	gpgsign = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[includeIf "gitdir:~/code/execwatch/"]
+    path = ~/.gitconfig-execwatch
+
